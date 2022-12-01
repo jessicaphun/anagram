@@ -15,3 +15,17 @@ pop,pop,true
 pop,pop,true
 pop,pop,true
 nope,pope,false
+pop,pop,true
+bob,bob,true
+bob,bob,true
+pop,pop,true
+pop,pop,true
+pop,pop,true
+pop,pop,true
+pop,pop,true
+pop,pop,true
+pop,pop,true
+bob,pop,false
+pop,pop,true
+bob,bob,true
+bob,pop,false

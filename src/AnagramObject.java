@@ -1,12 +1,12 @@
-public class Object {
+public class AnagramObject {
     String textValue1;
     String textValue2;
     boolean result;
 
-    public Object() {
+    public AnagramObject() {
     }
 
-    public Object (String textValue1, String textValue2, boolean result){
+    public AnagramObject (String textValue1, String textValue2, boolean result){
         this.textValue1 = textValue1;
         this.textValue2 = textValue2;
         this.result = result;
