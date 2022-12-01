@@ -3,6 +3,9 @@ public class Object {
     String textValue2;
     boolean result;
 
+    public Object() {
+    }
+
     public Object (String textValue1, String textValue2, boolean result){
         this.textValue1 = textValue1;
         this.textValue2 = textValue2;

@@ -8,3 +8,10 @@ hello,h3llo,false
 cat,tac,true
 hello,h2llo,false
 hello,hello,true
+pop,pop,true
+pop,pop,true
+pop,pop,true
+pop,pop,true
+pop,pop,true
+pop,pop,true
+nope,pope,false

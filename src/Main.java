@@ -10,12 +10,15 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         Scanner input = new Scanner(System.in);
+        String ans;
         System.out.println("Type in your username:");
         String username = input.nextLine();
-        System.out.println("Type in a word:");
-        String textValue1 = input.nextLine();
-        System.out.println("Type in another word:");
-        String textValue2 = input.nextLine();
+
+        do{
+            System.out.println("Type in a word:");
+            String textValue1 = input.nextLine();
+            System.out.println("Type in another word:");
+            String textValue2 = input.nextLine();
 
         if (textValue1.length() != textValue2.length()) {
             System.out.println("Text values must be of the same length!");
@@ -35,6 +38,17 @@ public class Main {
         ArrayList<Object> anagramArray = new ArrayList<Object>();
         anagramArray.add(anagramResult);
 
+        //checks to see if the two text values are in the array
+        for (int i =0; i <anagramArray.size(); i++){
+            if (anagramArray.contains(textValue1) && anagramArray.contains(textValue2)){
+                System.out.println(anagramArray.get(i));
+            }
+        }
+
+        System.out.println("Would you like to check for another anagram?");
+        ans = input.nextLine();
+        } while (ans.equals("yes"));
+
     }
 
     public static boolean anagramChecker(String textValue1, String textValue2){
@@ -46,10 +60,12 @@ public class Main {
         Arrays.sort(charArray2);
 
         if (Arrays.equals(charArray1,charArray2)){
-            System.out.println("true");
+            System.out.println("Anagram");
             return true;
+        } else{
+            System.out.println("Not Anagram");
+            return false;
         }
-        return false;
     }
 
 }
