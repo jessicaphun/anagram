@@ -29,16 +29,17 @@ public class Main {
             System.out.println("No numbers or special characters in the word!");
         }
 
-        AnagramObject anagramResult = new AnagramObject(textValue1,textValue2,anagramChecker(textValue1,textValue2));
-
-        anagramArray.add(anagramResult);
 
         //checks to see if the two text values are in the array
         for (int i =0; i <anagramArray.size(); i++){
-            if (anagramArray.get(i).getTextValue1().equals(textValue1) && anagramArray.get(i).getTextValue2().equals(textValue2)){
+            if (anagramArray.get(i).getTextValue1().equals(textValue1) && anagramArray.get(i).getTextValue2().equals(textValue2)) {
                 System.out.println(anagramArray.get(i).isResult());
             }
+
         }
+        
+        AnagramObject anagramResult = new AnagramObject(textValue1,textValue2, anagramChecker(textValue1,textValue2));
+        anagramArray.add(anagramResult);
 
         //writes the results of anagram checker to text file
         BufferedWriter outStream= new BufferedWriter(new FileWriter("AnagramResults.txt", true));
