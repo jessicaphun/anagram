@@ -1,0 +1,10 @@
+
+h3llo,h3llo,true
+cat,tac,true
+pop,pop,true
+wow,wow,true
+w2s,wow,false
+hello,h3llo,false
+cat,tac,true
+hello,h2llo,false
+hello,hello,true
