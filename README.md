@@ -9,3 +9,4 @@
 3. Enter another word to compare to the first word.
 4. The program will return true if it is an anagram or false if it is not.
 5. If any space characters or special characters are found in either of the words you entered, it will output an error message.
+>>>>>>> ddb49c87a57be00eef83d6057f1b2424185d8f53
